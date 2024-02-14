@@ -1,2 +1,3 @@
 notebooks/.ipynb_checkpoints/*
 .venv
+api-backend/__pycache__
