@@ -1,1 +1,1 @@
-![App Frontend](D:/Python Projects/FullStackAppBankNotes/client-frontend/public/image.png)
+![App Frontend](client-frontend/public/image.png)
