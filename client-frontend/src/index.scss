@@ -22,3 +22,24 @@ form{
     font-size: xx-large;
     text-align: center;
 }
+.chartContainer {
+    display: inline-block;
+    margin: 0 auto;
+}
+  
+/* Add these styles to make the RadarChart colorful */
+.chartContainer .carbon--chart-wrapper {
+background-color: rgba(0, 123, 255, 0.1); /* Background color */
+}
+
+.chartContainer .carbon--chart-axis-label {
+fill: #333; /* Axis label color */
+}
+
+.chartContainer .carbon--chart-axis-tick {
+stroke: #333; /* Axis tick color */
+}
+
+.chartContainer .carbon--legend-item {
+color: #333; /* Legend item color */
+}

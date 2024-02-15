@@ -8,6 +8,7 @@ import {
   Button,
   Loading
 } from "carbon-components-react";
+import RadarChart from './component/dataviz/RadarChart';
 
 function App() {
   const [varianceValue, setVarianceValue] = useState('');
@@ -81,9 +82,20 @@ function App() {
           {loading && <Loading description='Loading...' />} {/* Display loading indicator if loading state is true */}
           {predictions !== null && !loading && (
             <div>
-              The model predicted:
+              <div>
+                The model predicted:
+              </div>
               <div className='predictionResult'>
                 {parseFloat(predictions)}
+              </div>
+              <div className='chartContainer'>
+                <RadarChart
+                variance={parseFloat(varianceValue)}
+                skewness={parseFloat(skewnessValue)}
+                curtosis={parseFloat(curtosisValue)}
+                entropy={parseFloat(entropyValue)}
+                prediction={parseFloat(predictions)}
+              />
               </div>
             </div>
           )}
