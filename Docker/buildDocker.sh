@@ -1,0 +1,1 @@
+docker build -t frontend-image -f path/to/frontend/Dockerfile .
